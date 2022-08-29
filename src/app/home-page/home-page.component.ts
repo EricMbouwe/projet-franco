@@ -27,21 +27,21 @@ export class HomePageComponent implements OnInit {
       max: '3 adultes',
       lit: '2 places',
       vue: 'Piscine ou rue',
-      image: ''
+      image: 'assets/visit1.jpg',
     },
     {
       title: 'Suite presidentielle',
       max: '3 adultes',
       lit: '3 places',
       vue: 'Piscine ou rue',
-      image: ''
+      image: 'assets/visit1.jpg',
     },
     {
       title: 'Suite Luxe',
       max: '4 adultes',
       lit: '2 places',
       vue: 'Piscine ou rue',
-      image: ''
+      image: 'assets/visit1.jpg',
     }
   ]
 

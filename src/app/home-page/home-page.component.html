@@ -39,18 +39,23 @@
 <section class="bg-gray-100 text-center py-5">
     <h2 class="text-4xl font-bold">Chambre & Suites</h2>
 
-    <div class="rooms_wrapper container">
-        <ng-container *ngFor="let room of rooms">
-            <app-room-card [roomTitle]="room.title" [roomMax]="room.max" [roomLit]="room.lit" [roomVue]="room.vue"
-                [roomImage]="room.image">
-            </app-room-card>
-        </ng-container>
-    </div>
+    <div class="max-w-5xl mx-auto">
+        <div class="rooms_wrapper grid grid-cols-3 gap-5 my-10 justify-center">
+            <ng-container *ngFor="let room of rooms">
+                <app-room-card [roomTitle]="room.title" [roomMax]="room.max" [roomLit]="room.lit" [roomVue]="room.vue"
+                    [roomImage]="room.image">
+                </app-room-card>
+            </ng-container>
+        </div>
 
-    <p class="mt-5 container">Les chambres disposent toutes d'une télevison par satelite et de la climatisation. Leur
-        salle de
-        bains privative est pourvue d'articles de toilettes gratuits. Vous pourrez profiter de la vue sur la ville et la
-        piscine. Les chambres comprennent egalement un coffre-fort.</p>
+        <p class="mt-5 text-gray-600">Les chambres disposent toutes d'une télevison par satelite et de la climatisation.
+            Leur
+            salle de
+            bains privative est pourvue d'articles de toilettes gratuits. Vous pourrez profiter de la vue sur la ville
+            et la
+            piscine. Les chambres comprennent egalement un coffre-fort.
+        </p>
+    </div>
 </section>
 
 <section class="bg-gray-100 text-center py-5 mt-5">
@@ -64,6 +69,9 @@
     </div>
 </section>
 
-<section>
-    <h2 class="text-4xl font-bold">Localisation</h2>
+<section class="py-5 mt-5 text-center">
+    <div class="container">
+        <h2 class="text-4xl font-bold">Localisation</h2>
+        <img class="w-full h-80 object-cover mt-5" src="assets/geolocation.png" alt="hotel franco geolocation">
+    </div>
 </section>
