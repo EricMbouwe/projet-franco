@@ -6,6 +6,7 @@ import { NavlinkComponent } from './layout/navlink/navlink.component';
 import { LoginButtonComponent } from './layout/login-button/login-button.component';
 import { ButtonComponent } from './ui/button/button.component';
 import { FormInputComponent } from './ui/form-input/form-input.component';
+import { FooterComponent } from './layout/footer/footer.component';
 
 
 const components: any = [
@@ -13,7 +14,8 @@ const components: any = [
   NavlinkComponent,
   LoginButtonComponent,
   ButtonComponent,
-  FormInputComponent
+  FormInputComponent,
+  FooterComponent
 ];
 
 const modules = [

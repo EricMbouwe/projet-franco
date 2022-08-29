@@ -27,7 +27,43 @@
             allowfullscreen></iframe>
     </div>
 
-    <div *ngfor="let image of vistesImages">
-        <img src="" alt="">
+    <div class="mt-5 flex gap-5 container">
+        <img *ngFor="let image of vistesImages" class="w-1/3" src="{{image}}" alt="visite realite augmantée">
     </div>
+
+    <div class="my-10">
+        <app-button [name]="'Visiter lhotel'"></app-button>
+    </div>
+</section>
+
+<section class="bg-gray-100 text-center py-5">
+    <h2 class="text-4xl font-bold">Chambre & Suites</h2>
+
+    <div class="rooms_wrapper container">
+        <ng-container *ngFor="let room of rooms">
+            <app-room-card [roomTitle]="room.title" [roomMax]="room.max" [roomLit]="room.lit" [roomVue]="room.vue"
+                [roomImage]="room.image">
+            </app-room-card>
+        </ng-container>
+    </div>
+
+    <p class="mt-5 container">Les chambres disposent toutes d'une télevison par satelite et de la climatisation. Leur
+        salle de
+        bains privative est pourvue d'articles de toilettes gratuits. Vous pourrez profiter de la vue sur la ville et la
+        piscine. Les chambres comprennent egalement un coffre-fort.</p>
+</section>
+
+<section class="bg-gray-100 text-center py-5 mt-5">
+    <h2 class="text-4xl font-bold">Evénements & Salles</h2>
+
+    <div class="mt-5 grid grid-cols-3 gap-5 container">
+        <img *ngFor="let image of eventImages" class="w-full" src="{{image}}" alt="visite realite augmantée">
+    </div>
+    <div class="events_button mt-5">
+        <app-button [name]="'Voir plus'"></app-button>
+    </div>
+</section>
+
+<section>
+    <h2 class="text-4xl font-bold">Localisation</h2>
 </section>
