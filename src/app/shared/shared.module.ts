@@ -4,12 +4,16 @@ import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './layout/header/header.component';
 import { NavlinkComponent } from './layout/navlink/navlink.component';
 import { LoginButtonComponent } from './layout/login-button/login-button.component';
+import { ButtonComponent } from './ui/button/button.component';
+import { FormInputComponent } from './ui/form-input/form-input.component';
 
 
-const components:any = [
-  HeaderComponent, 
+const components: any = [
+  HeaderComponent,
   NavlinkComponent,
-  LoginButtonComponent
+  LoginButtonComponent,
+  ButtonComponent,
+  FormInputComponent
 ];
 
 const modules = [
@@ -20,7 +24,7 @@ const modules = [
 @NgModule({
   declarations: [...components],
   imports: [...modules],
-exports: [
+  exports: [
     ...components,
     ...modules,
   ]

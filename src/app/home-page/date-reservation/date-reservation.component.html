@@ -1,0 +1,22 @@
+<div class="container bg-gray-100 rounded-lg p-10 relative top-[30%]">
+    <div class="flex justify-between items-end gap-20">
+        <div class="inputs__wrapper w-full flex items-center gap-5">
+            <div class="input flex-1">
+                <p class="text-gray-600">date d'arrivée</p>
+                <app-form-input [type]="'date'"></app-form-input>
+            </div>
+
+            <div class="input flex-1">
+                <p class="text-gray-600">date de départ</p>
+                <app-form-input [type]="'date'"></app-form-input>
+            </div>
+
+            <div class="input flex-1">
+                <p class="text-gray-600">Personnes</p>
+                <app-form-input [type]="'number'" [value]="1"></app-form-input>
+            </div>
+        </div>
+
+        <app-button [name]="'Rechercher'"></app-button>
+    </div>
+</div>
