@@ -1,0 +1,42 @@
+<article class="shadow-md rounded-md bg-white pt-5 pb-10 px-2">
+    <div>
+        <h4 class="text-2xl md:text-3xl md:pl-4">{{room?.name}}</h4>
+        <div class="room_infos mt-2 grid grid-cols-3 gap-1 items-start text-gray-base">
+            <img class="col-span-1" src="{{room.image}}" alt="{{room.name}}">
+            <div class="infos-table col-span-2 flex flex-col">
+                <div class="table_cols_wrapper flex">
+                    <div class="table_col">
+                        <h5 class="table_col_title">Capacité</h5>
+                        <div class="table_col_content">
+                            <p>{{room?.capacity}}</p>
+                        </div>
+                    </div>
+                    <div class="table_col">
+                        <h5 class="table_col_title">Atouts</h5>
+                        <div class="table_col_content">
+                            <p>{{room?.capacity}}</p>
+                        </div>
+                    </div>
+                    <div class="table_col">
+                        <h5 class="table_col_title">#Chambre</h5>
+                        <div class="table_col_content">
+                            <p>{{room?.capacity}}</p>
+                        </div>
+                    </div>
+                    <div class="table_col">
+                        <h5 class="table_col_title">Tarif</h5>
+                        <div class="table_col_content">
+                            <p>{{room?.capacity}}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="equipements text-lg md:text-xl uppercase p-2 border-t border-b mt-5">
+                    equipements
+                </div>
+            </div>
+
+        </div>
+        <p class="mt-10">{{room?.description}}</p>
+    </div>
+</article>

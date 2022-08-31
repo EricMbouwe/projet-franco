@@ -1,0 +1,3 @@
+.title {
+    @apply relative text-center text-3xl md:text-4xl text-blue-dark uppercase font-semibold after:absolute after:w-32 lg:after:w-44 after:h-4 after:bg-blue-dark after:-bottom-8 after:left-[calc(50%-5.5rem)] after:rounded-full;
+}
