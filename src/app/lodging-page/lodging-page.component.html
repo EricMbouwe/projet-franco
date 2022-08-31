@@ -1,0 +1,19 @@
+<section class="hero bg-[url('assets/hero2.jpg')] -mt-40 flex flex-col relative">
+    <div class="container">
+        <div class="hero_text_wrapper text-white text-center mt-52">
+            <h1 class="text-5xl md:text-6xl font-bold">Hébergement</h1>
+        </div>
+    </div>
+</section>
+
+<section class="mt-16">
+    <div class="container">
+        <h2 class="title">Chambre et suites</h2>
+
+        <div class="rooms_wrapper grid grid-cols-1 gap-4 md:gap-10 my-10">
+            <ng-container *ngFor="let room of roomTypes">
+                <app-room-detail [room]="room"></app-room-detail>
+            </ng-container>
+        </div>
+    </div>
+</section>

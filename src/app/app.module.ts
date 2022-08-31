@@ -7,13 +7,17 @@ import { SharedModule } from './shared/shared.module';
 import { HomePageComponent } from './home-page/home-page.component';
 import { DateReservationComponent } from './home-page/date-reservation/date-reservation.component';
 import { RoomCardComponent } from './home-page/room-card/room-card.component';
+import { LodgingPageComponent } from './lodging-page/lodging-page.component';
+import { RoomDetailComponent } from './lodging-page/room-detail/room-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     DateReservationComponent,
-    RoomCardComponent
+    RoomCardComponent,
+    LodgingPageComponent,
+    RoomDetailComponent
   ],
   imports: [
     BrowserModule,
