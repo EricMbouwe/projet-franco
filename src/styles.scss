@@ -8,5 +8,6 @@
 
 // GENERAL RULES
 .container {
-    @apply max-w-6xl mx-auto
+    @apply max-w-6xl mx-auto;
+    padding-inline: 10px;
 }
