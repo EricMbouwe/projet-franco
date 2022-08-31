@@ -1,21 +1,21 @@
 <section class="hero bg-[url('assets/hero.jpg')] -mt-40 flex flex-col relative">
     <div class="container">
         <div class="hero_text_wrapper text-white text-center mt-52">
-            <h1 class="text-5xl lg:text-6xl font-bold">Bienvenue au Franco Hotel</h1>
+            <h1 class="text-5xl md:text-6xl font-bold">Bienvenue au Franco Hotel</h1>
             <p class="mt-14">L'endroit ideal pour passer un sejour agréable</p>
         </div>
     </div>
-    <div class="mt-16 lg:absolute lg:-bottom-[70px] w-full">
+    <div class="mt-16 md:absolute md:-bottom-[70px] w-full">
         <div class="container">
             <app-date-reservation></app-date-reservation>
         </div>
     </div>
 </section>
 
-<section class="mt-80 lg:mt-32 text-center">
+<section class="mt-80 md:mt-32 text-center">
     <div class="container">
-        <h2 class="text-3xl lg:text-4xl font-bold">Visite Réalité Augmentée</h2>
-        <p class="text-gray-600 mt-5">Au coeur de la capitale Yaoundé, dans un quarter sécurisé, lhotel FRANCO vous
+        <h2 class="text-3xl md:text-4xl font-bold">Visite Réalité Augmentée</h2>
+        <p class="text-gray-base mt-5">Au coeur de la capitale Yaoundé, dans un quarter sécurisé, lhotel FRANCO vous
             propose
             plus
             de 100
@@ -25,7 +25,7 @@
             espace piscine, wifi, navette aeroport</p>
     </div>
     <div class="mt-5">
-        <iframe class="w-full" height="315" src="https://www.youtube.com/embed/vPLfRjmOluU" title="YouTube video player"
+        <iframe class="w-full" height="320" src="https://www.youtube.com/embed/vPLfRjmOluU" title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen>
@@ -41,11 +41,11 @@
     </div>
 </section>
 
-<section class="bg-gray-100 text-center py-5">
-    <h2 class="text-3xl lg:text-4xl font-bold">Chambre & Suites</h2>
+<section class="bg-gray-light text-center py-5">
+    <h2 class="text-3xl md:text-4xl font-bold">Chambre & Suites</h2>
 
-    <div class="container lg:max-w-5xl mx-auto">
-        <div class="rooms_wrapper grid grid-cols-1 lg:grid-cols-3 gap-5 my-10 justify-center">
+    <div class="container md:max-w-5xl mx-auto">
+        <div class="rooms_wrapper grid grid-cols-1 md:grid-cols-3 gap-5 my-10 justify-center">
             <ng-container *ngFor="let room of rooms">
                 <app-room-card [roomTitle]="room.title" [roomMax]="room.max" [roomLit]="room.lit" [roomVue]="room.vue"
                     [roomImage]="room.image">
@@ -53,7 +53,8 @@
             </ng-container>
         </div>
 
-        <p class="mt-5 text-gray-600">Les chambres disposent toutes d'une télevison par satelite et de la climatisation.
+        <p class="mt-5 text-gray-base">Les chambres disposent toutes d'une télevison par satelite et de la
+            climatisation.
             Leur
             salle de
             bains privative est pourvue d'articles de toilettes gratuits. Vous pourrez profiter de la vue sur la ville
@@ -63,8 +64,8 @@
     </div>
 </section>
 
-<section class="bg-gray-100 text-center py-5 mt-5">
-    <h2 class="text-3xl lg:text-4xl font-bold">Evénements & Salles</h2>
+<section class="bg-gray-light text-center py-5 mt-5">
+    <h2 class="text-3xl md:text-4xl font-bold">Evénements & Salles</h2>
 
     <div class="mt-5 grid grid-cols-3 gap-5 container">
         <img *ngFor="let image of eventImages" class="w-full" src="{{image}}" alt="visite realite augmantée">
@@ -76,7 +77,7 @@
 
 <section class="py-5 mt-5 text-center">
     <div class="container">
-        <h2 class="text-3xl lg:text-4xl font-bold">Localisation</h2>
+        <h2 class="text-3xl md:text-4xl font-bold">Localisation</h2>
         <img class="w-full h-80 object-cover mt-5" src="assets/geolocation.png" alt="hotel franco geolocation">
     </div>
 </section>

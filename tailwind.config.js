@@ -14,7 +14,9 @@ module.exports = {
           cyan: "#231f20",
         },
         gray: {
-          base: "#8e8c98",
+          // base: "#8e8c98",
+          base: "#475569",
+          light: "#f9fafb",
         },
       },
     },
