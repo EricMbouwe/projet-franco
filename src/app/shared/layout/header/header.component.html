@@ -1,0 +1,24 @@
+<header class="h-20 md:h-40 flex items-center relative z-50">
+  <div class="container flex items-center justify-between">
+    <a routerLink="/">
+      <img class="w-20" src="assets/logo_@2x.png" alt="Hotel franco" />
+    </a>
+
+    <nav class="hidden md:flex items-center gap-5">
+      <ul class="flex gap-5">
+        <ng-container *ngFor="let route of navRoutes">
+          <app-navlink [name]="route"></app-navlink>
+        </ng-container>
+      </ul>
+
+      <app-login-button></app-login-button>
+    </nav>
+
+    <button class="md:hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="w-10 h-10 text-white">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+    </button>
+  </div>
+</header>
