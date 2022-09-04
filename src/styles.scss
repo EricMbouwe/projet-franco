@@ -13,7 +13,12 @@
 }
 
 .hero {
-    height: 600px;
+    height: 450px;
+
+    @media (min-width: 768px) {
+        height: 550px;
+    }
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
