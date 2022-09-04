@@ -1,3 +1,17 @@
+$line-size-sm: 8rem;
+$line-size-lg: 11rem;
+
 .title {
-    @apply relative text-center text-3xl md:text-4xl text-blue-dark uppercase font-semibold after:absolute after:w-32 lg:after:w-44 after:h-4 after:bg-blue-dark after:-bottom-8 after:left-[calc(50%-5.5rem)] after:rounded-full;
+    @apply relative text-center text-3xl md:text-4xl text-blue-dark uppercase font-semibold after:absolute after:h-4 after:bg-blue-dark after:-bottom-8 after:rounded-full;
+    
+    &:after {
+        width: $line-size-sm;
+        left: calc(50% - $line-size-sm/2);
+        
+        @media (min-width: 768px) {
+            width: $line-size-lg;
+            left: calc(50% - $line-size-lg/2);
+        }
+    }
+
 }
